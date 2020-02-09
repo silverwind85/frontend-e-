@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../emu-frontend.js';
+
+<Meta 
+  title="EmuFrontend"
+  parameters={{
+    component: "emu-frontend",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# EmuFrontend
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add emu-frontend
+```
+
+```js
+import 'emu-frontend/emu-frontend.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <emu-frontend></emu-frontend>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="emu-frontend" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <emu-frontend .title=${'Hello World'}></emu-frontend>
+  `}
+</Story>

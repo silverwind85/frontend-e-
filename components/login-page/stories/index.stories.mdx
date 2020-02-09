@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../login-page.js';
+
+<Meta
+  title="LoginPage"
+  parameters={{
+    component: "page-one",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# LoginPage
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add page-one
+```
+
+```js
+import 'page-one/login-page.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <page-one></page-one>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="page-one" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <page-one .title=${'Hello World'}></page-one>
+  `}
+</Story>
